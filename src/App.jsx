@@ -1,8 +1,13 @@
+import { Route, Routes } from "react-router-dom";
+import Editor from "./Editor";
+import Home from "./Home";
+
 const App = () => {
   return (
-    <div>
-      <h1>App Root Components</h1>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />,
+      <Route path="/editor/" element={<Editor />} />
+    </Routes>
   );
 };
 
